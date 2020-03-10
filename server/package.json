@@ -1,0 +1,43 @@
+{
+  "name": "fullstack-ts-boiler-server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "watch": "nodemon -e ts -w ./src -x npm run watch:serve",
+    "watch:serve": "ts-node src/server.ts",
+    "serve": "node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shwilliam/fullstack-ts-boiler.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "William L <w-lindvall@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shwilliam/fullstack-ts-boiler/issues"
+  },
+  "homepage": "https://github.com/shwilliam/fullstack-ts-boiler#readme",
+  "dependencies": {
+    "@types/graphql": "^14.2.0",
+    "@types/shortid": "0.0.29",
+    "apollo-server": "^2.4.8",
+    "dotenv": "^7.0.0",
+    "graphql": "^14.2.1",
+    "reflect-metadata": "^0.1.13",
+    "shortid": "^2.2.14",
+    "type-graphql": "^0.17.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.23.0",
+    "@typescript-eslint/parser": "^2.23.0",
+    "eslint": "^6.8.0",
+    "nodemon": "^1.18.11",
+    "ts-node": "^8.1.0",
+    "typescript": "^3.4.4"
+  }
+}
