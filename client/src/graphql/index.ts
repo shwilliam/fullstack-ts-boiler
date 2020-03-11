@@ -7,6 +7,7 @@ import {
   AddPostMutation,
   AddPostMutationVariables,
   AddPostDocument,
+  NewPostInput as INewPostInput,
   Post as IPost,
 } from './generated';
 
@@ -37,3 +38,4 @@ export async function addPost(
 }
 
 export type Post = IPost
+export type NewPostInput = INewPostInput
